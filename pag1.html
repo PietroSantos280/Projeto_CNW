@@ -4,12 +4,563 @@
     <!-- Artur -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <p>hghf</p>
+    <title>The Last of Us — Personagens, História, Linha do Tempo e Série</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="artur.css" rel="stylesheet">
 </head>
 <body>
-    
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg fixed-top tlou-navbar">
+        <div class="container">
+            <a class="navbar-brand tlou-brand" href="#inicio">
+                <i class="bi bi-shield-fill-check me-2"></i>THE LAST OF US
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#infectados">Infectados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#personagens">Personagens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cronologia">Linha do Tempo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#serie">Série</a></li>
+                    <li class="nav-item ms-lg-2"><a class="btn tlou-btn-primary btn-sm" href="#serie">Assistir</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO / INÍCIO ===================== -->
+    <header id="inicio" class="tlou-hero">
+        <div class="container">
+            <div class="row align-items-center g-5 tlou-hero-row">
+                <div class="col-lg-7">
+                    <span class="tlou-badge"><i class="bi bi-broadcast me-1"></i> Baseado no aclamado jogo da Naughty Dog</span>
+                    <h1 class="tlou-hero-title">THE LAST<br>OF US</h1>
+                    <p class="tlou-hero-subtitle">
+                        Vinte anos após o colapso da civilização provocado por uma pandemia fúngica, a esperança
+                        da humanidade repousa sobre uma jornada improvável entre um contrabandista endurecido pela
+                        dor e uma jovem que pode carregar em seu sangue a chave para uma cura. Uma história sobre
+                        amor, perda, lealdade e até onde somos capazes de ir por quem amamos.
+                    </p>
+                    <div class="tlou-hero-actions">
+                        <a href="#historia" class="btn tlou-btn-primary"><i class="bi bi-play-fill me-1"></i> Conhecer a História</a>
+                        <a href="#personagens" class="btn tlou-btn-ghost">Ver Personagens</a>
+                    </div>
+                    <div class="tlou-hero-tags">
+                        <span><i class="bi bi-geo-alt-fill"></i> EUA devastados</span>
+                        <span><i class="bi bi-people-fill"></i> Vínculo humano</span>
+                        <span><i class="bi bi-virus"></i> Cordyceps</span>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tlou-hero-card">
+                        <div class="tlou-hero-card-img">
+                            <span class="tlou-char-placeholder"><i class="bi bi-image"></i> Imagem — Arte de Capa</span>
+                        </div>
+                        <div class="tlou-hero-card-meta">
+                            <div>
+                                <span class="tlou-meta-num">2013</span>
+                                <span class="tlou-meta-label">Surto</span>
+                            </div>
+                            <div>
+                                <span class="tlou-meta-num">20</span>
+                                <span class="tlou-meta-label">Anos depois</span>
+                            </div>
+                            <div>
+                                <span class="tlou-meta-num">&#8734;</span>
+                                <span class="tlou-meta-label">Sacrifício</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== FAIXA DE ESTATÍSTICAS ===================== -->
+    <section class="tlou-statband">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <span class="tlou-statband-num">60%</span>
+                    <span class="tlou-statband-label">da população infectada</span>
+                </div>
+                <div class="col-6 col-md-3">
+                    <span class="tlou-statband-num">+30M</span>
+                    <span class="tlou-statband-label">cópias vendidas</span>
+                </div>
+                <div class="col-6 col-md-3">
+                    <span class="tlou-statband-num">200+</span>
+                    <span class="tlou-statband-label">prêmios de GOTY</span>
+                </div>
+                <div class="col-6 col-md-3">
+                    <span class="tlou-statband-num">2</span>
+                    <span class="tlou-statband-label">temporadas na HBO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== HISTÓRIA ===================== -->
+    <section id="historia" class="tlou-section">
+        <div class="container">
+            <div class="tlou-section-head">
+                <span class="tlou-eyebrow"><i class="bi bi-globe-americas me-1"></i> 01 — O Mundo</span>
+                <h2 class="tlou-section-title">A História</h2>
+            </div>
+
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-7">
+                    <p class="tlou-text">
+                        Em setembro de 2013, uma mutação do fungo <em>Cordyceps</em> — antes capaz de infectar apenas
+                        insetos — encontra no ser humano um novo hospedeiro. A infecção se espalha em uma velocidade
+                        avassaladora: em poucos dias, aeroportos são fechados, cidades inteiras entram em pânico e os
+                        primeiros infectados, movidos por uma agressividade cega, transformam ruas movimentadas em
+                        cenários de caos absoluto. Aqueles que são contaminados perdem gradualmente a consciência,
+                        enquanto o fungo assume o controle do corpo e o transforma em uma arma involuntária de contágio.
+                    </p>
+                    <p class="tlou-text">
+                        Vinte anos depois, o mundo que conhecíamos não existe mais. Os sobreviventes se aglomeram em
+                        zonas de quarentena controladas com mão de ferro pela FEDRA, a agência militar que impõe ordem
+                        por meio do medo, do racionamento e da vigilância constante. Fora desses muros, a natureza
+                        reconquistou as cidades: arranha-céus são engolidos por vinhas, ruas viram florestas e prédios
+                        abandonados guardam tanto os restos da antiga civilização quanto os perigos do presente. Entre
+                        os que resistem estão os Vaga-lumes, um grupo rebelde que sonha em derrubar a FEDRA e devolver
+                        a liberdade — e a esperança — a um mundo que parece ter esquecido o que ambas significam.
+                    </p>
+                    <p class="tlou-text">
+                        É nesse cenário de escassez, violência e desconfiança que Joel, um contrabandista marcado por
+                        uma perda que nunca cicatrizou, recebe uma missão aparentemente simples: escoltar Ellie, uma
+                        adolescente de catorze anos, para fora da zona de quarentena de Boston. O que começa como uma
+                        troca fria e interesseira se transforma, quilômetro após quilômetro, em uma travessia perigosa
+                        por um país despedaçado. Ao enfrentarem juntos infectados, saqueadores, invernos implacáveis e
+                        suas próprias feridas, um vínculo profundo e inesperado nasce entre eles — um laço que colocará
+                        à prova tudo aquilo em que Joel acreditava e redefinirá, para sempre, o significado de família.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tlou-story-facts">
+                        <h3 class="tlou-facts-title"><i class="bi bi-journal-text me-2"></i>Fatos do Universo</h3>
+                        <ul class="tlou-facts-list">
+                            <li><span>Origem</span> Fungo Cordyceps mutante</li>
+                            <li><span>Início do surto</span> Setembro de 2013</li>
+                            <li><span>Presente</span> Cerca de 20 anos depois</li>
+                            <li><span>Facções</span> FEDRA · Vaga-lumes · Sobreviventes</li>
+                            <li><span>Ameaças</span> Corredores · Estaladores · Baluartes</li>
+                            <li><span>Tema central</span> Amor, perda e o preço da sobrevivência</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CITAÇÃO ===================== -->
+    <section class="tlou-quote-band">
+        <div class="container">
+            <blockquote class="tlou-quote">
+                <i class="bi bi-quote tlou-quote-mark"></i>
+                <p>Não importa o que aconteça, você continua encontrando algo pelo que lutar.</p>
+                <cite>— Tess</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- ===================== INFECTADOS (nova seção) ===================== -->
+    <section id="infectados" class="tlou-section tlou-section-alt">
+        <div class="container">
+            <div class="tlou-section-head">
+                <span class="tlou-eyebrow"><i class="bi bi-virus me-1"></i> 02 — A Ameaça</span>
+                <h2 class="tlou-section-title">Os Infectados</h2>
+                <p class="tlou-section-desc mx-auto">
+                    Conforme o fungo Cordyceps consome o corpo, o infectado passa por estágios cada vez mais letais.
+                    Conheça os principais tipos que assombram os sobreviventes.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="tlou-infected-card">
+                        <div class="tlou-infected-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                        <h3>Corredores</h3>
+                        <span class="tlou-infected-stage">Estágio 1</span>
+                        <p>Recém-infectados que ainda mantêm forma humana. Rápidos e agressivos, atacam em grupo guiados pela visão.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="tlou-infected-card">
+                        <div class="tlou-infected-icon"><i class="bi bi-eye-slash-fill"></i></div>
+                        <h3>Perseguidores</h3>
+                        <span class="tlou-infected-stage">Estágio 2</span>
+                        <p>Mais violentos e resistentes, com o fungo começando a cobrir os olhos. Combinam força e alguma percepção.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="tlou-infected-card">
+                        <div class="tlou-infected-icon"><i class="bi bi-soundwave"></i></div>
+                        <h3>Estaladores</h3>
+                        <span class="tlou-infected-stage">Estágio 3</span>
+                        <p>Cegos, localizam presas por ecolocalização. O crânio deformado pelo fungo os torna mortais e imprevisíveis.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="tlou-infected-card">
+                        <div class="tlou-infected-icon"><i class="bi bi-shield-slash-fill"></i></div>
+                        <h3>Baluartes</h3>
+                        <span class="tlou-infected-stage">Estágio Final</span>
+                        <p>Infectados há anos, cobertos por uma couraça fúngica. Enormes e quase indestrutíveis, são a ameaça derradeira.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PERSONAGENS (faixas horizontais alternadas) ===================== -->
+    <section id="personagens" class="tlou-section">
+        <div class="container">
+            <div class="tlou-section-head">
+                <span class="tlou-eyebrow"><i class="bi bi-people-fill me-1"></i> 03 — Os Sobreviventes</span>
+                <h2 class="tlou-section-title">Personagens</h2>
+                <p class="tlou-section-desc mx-auto">
+                    Conheça as figuras centrais que moldam a jornada. Cada bloco traz um espaço de imagem com o nome
+                    do personagem logo abaixo — basta substituir pelos retratos de sua preferência.
+                </p>
+            </div>
+
+            <div class="tlou-char-list">
+
+                <!-- Personagem -->
+                <article class="tlou-char-row">
+                    <div class="tlou-char-media">
+                        <div class="tlou-char-img">
+                            <span class="tlou-char-placeholder"><i class="bi bi-image"></i> Imagem</span>
+                        </div>
+                        <p class="tlou-char-caption">Joel Miller</p>
+                    </div>
+                    <div class="tlou-char-info">
+                        <span class="tlou-char-role">Contrabandista</span>
+                        <h3 class="tlou-char-name">Joel Miller</h3>
+                        <p class="tlou-char-desc">
+                            Sobrevivente endurecido pelos vinte anos que se seguiram à noite em que perdeu sua filha,
+                            Sarah, nas primeiras horas do surto. Pragmático, desconfiado e capaz de atos brutais em
+                            nome da sobrevivência, Joel construiu ao seu redor um muro de indiferença para não sofrer
+                            novamente. A missão de escoltar Ellie, porém, aos poucos reabre nele uma capacidade de
+                            afeto que ele julgava morta — e o obriga a reencontrar a versão de pai que havia enterrado.
+                        </p>
+                        <div class="tlou-char-traits">
+                            <span>Protetor</span><span>Resiliente</span><span>Reservado</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tlou-char-row tlou-char-row-reverse">
+                    <div class="tlou-char-media">
+                        <div class="tlou-char-img">
+                            <span class="tlou-char-placeholder"><i class="bi bi-image"></i> Imagem</span>
+                        </div>
+                        <p class="tlou-char-caption">Ellie Williams</p>
+                    </div>
+                    <div class="tlou-char-info">
+                        <span class="tlou-char-role">A Imune</span>
+                        <h3 class="tlou-char-name">Ellie Williams</h3>
+                        <p class="tlou-char-desc">
+                            Nascida já no mundo pós-apocalíptico, Ellie nunca conheceu a normalidade que os mais velhos
+                            tanto lamentam. Corajosa, curiosa e dona de um humor afiado que esconde suas dores, ela
+                            carrega um segredo capaz de mudar o destino da humanidade: é imune à infecção. Essa condição
+                            a torna, ao mesmo tempo, a maior esperança de uma cura e um alvo em um mundo disposto a tudo.
+                            Sob a proteção de Joel, ela descobre o que é ter alguém por quem valha a pena lutar.
+                        </p>
+                        <div class="tlou-char-traits">
+                            <span>Corajosa</span><span>Sarcástica</span><span>Leal</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tlou-char-row">
+                    <div class="tlou-char-media">
+                        <div class="tlou-char-img">
+                            <span class="tlou-char-placeholder"><i class="bi bi-image"></i> Imagem</span>
+                        </div>
+                        <p class="tlou-char-caption">Tess</p>
+                    </div>
+                    <div class="tlou-char-info">
+                        <span class="tlou-char-role">Parceira de Joel</span>
+                        <h3 class="tlou-char-name">Tess</h3>
+                        <p class="tlou-char-desc">
+                            Contrabandista experiente e sócia de Joel nas operações clandestinas de Boston, Tess é
+                            inteligente, determinada e não hesita em impor respeito quando necessário. Por trás da
+                            postura dura existe alguém que ainda acredita que suas escolhas podem ter um propósito
+                            maior. É ela quem enxerga primeiro a importância de Ellie e quem dá o empurrão decisivo
+                            para que a jornada comece, deixando uma marca que acompanha Joel por todo o caminho.
+                        </p>
+                        <div class="tlou-char-traits">
+                            <span>Estrategista</span><span>Firme</span><span>Determinada</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tlou-char-row tlou-char-row-reverse">
+                    <div class="tlou-char-media">
+                        <div class="tlou-char-img">
+                            <span class="tlou-char-placeholder"><i class="bi bi-image"></i> Imagem</span>
+                        </div>
+                        <p class="tlou-char-caption">Tommy</p>
+                    </div>
+                    <div class="tlou-char-info">
+                        <span class="tlou-char-role">Irmão de Joel</span>
+                        <h3 class="tlou-char-name">Tommy</h3>
+                        <p class="tlou-char-desc">
+                            Irmão mais novo de Joel e ex-integrante dos Vaga-lumes, Tommy é o oposto emocional do irmão:
+                            idealista, esperançoso e movido pela crença de que ainda é possível reconstruir algo digno
+                            em meio às ruínas. Após anos difíceis, ele encontra um novo propósito ao ajudar a erguer uma
+                            comunidade protegida, onde famílias possam viver longe do terror constante. Sua trajetória
+                            representa a teimosa insistência da humanidade em recomeçar, mesmo quando tudo parece perdido.
+                        </p>
+                        <div class="tlou-char-traits">
+                            <span>Idealista</span><span>Esperançoso</span><span>Leal</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tlou-char-row">
+                    <div class="tlou-char-media">
+                        <div class="tlou-char-img">
+                            <span class="tlou-char-placeholder"><i class="bi bi-image"></i> Imagem</span>
+                        </div>
+                        <p class="tlou-char-caption">Marlene</p>
+                    </div>
+                    <div class="tlou-char-info">
+                        <span class="tlou-char-role">Líder dos Vaga-lumes</span>
+                        <h3 class="tlou-char-name">Marlene</h3>
+                        <p class="tlou-char-desc">
+                            À frente do movimento rebelde que desafia abertamente a FEDRA, Marlene carrega o peso de
+                            liderar uma causa que já custou incontáveis vidas. Firme e estrategista, ela precisa
+                            constantemente equilibrar seus ideais com decisões dolorosas. É Marlene quem confia Ellie
+                            aos cuidados de Joel, apostando que a garota pode ser a resposta que os Vaga-lumes buscam
+                            há anos — mesmo sabendo o preço terrível que essa esperança pode exigir de todos.
+                        </p>
+                        <div class="tlou-char-traits">
+                            <span>Líder</span><span>Determinada</span><span>Sacrificial</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tlou-char-row tlou-char-row-reverse">
+                    <div class="tlou-char-media">
+                        <div class="tlou-char-img">
+                            <span class="tlou-char-placeholder"><i class="bi bi-image"></i> Imagem</span>
+                        </div>
+                        <p class="tlou-char-caption">Bill</p>
+                    </div>
+                    <div class="tlou-char-info">
+                        <span class="tlou-char-role">Sobrevivente Solitário</span>
+                        <h3 class="tlou-char-name">Bill</h3>
+                        <p class="tlou-char-desc">
+                            Desconfiado ao extremo, Bill transformou sua cidade isolada em uma verdadeira fortaleza,
+                            repleta de armadilhas, cercas e sistemas de defesa cuidadosamente planejados. À primeira
+                            vista, parece apenas um sobrevivente rabugento e paranoico, disposto a viver longe de todos.
+                            No entanto, sua história esconde uma profundidade emocional inesperada, revelando que mesmo
+                            no fim do mundo o amor e a companhia podem florescer nos lugares mais improváveis.
+                        </p>
+                        <div class="tlou-char-traits">
+                            <span>Precavido</span><span>Engenhoso</span><span>Sensível</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== LINHA DO TEMPO (zigue-zague) ===================== -->
+    <section id="cronologia" class="tlou-section tlou-section-alt">
+        <div class="container">
+            <div class="tlou-section-head">
+                <span class="tlou-eyebrow"><i class="bi bi-clock-history me-1"></i> 04 — Cronologia</span>
+                <h2 class="tlou-section-title">Linha do Tempo</h2>
+                <p class="tlou-section-desc mx-auto">
+                    Os principais marcos que definem a saga, do surto inicial que devastou o mundo ao desfecho
+                    emocionalmente devastador da jornada de Joel e Ellie.
+                </p>
+            </div>
+
+            <div class="tlou-timeline">
+                <div class="tlou-timeline-item">
+                    <div class="tlou-timeline-marker"></div>
+                    <div class="tlou-timeline-content">
+                        <span class="tlou-timeline-year">2013 — Dia do Surto</span>
+                        <h3>O Colapso</h3>
+                        <p>
+                            Em uma única noite, o Cordyceps se alastra e derruba a civilização. Em meio ao caos das
+                            evacuações, aos tiros e ao pânico nas ruas, Joel perde sua filha Sarah — uma ferida que
+                            moldará cada uma de suas decisões pelas duas décadas seguintes e definirá quem ele se torna.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tlou-timeline-item">
+                    <div class="tlou-timeline-marker"></div>
+                    <div class="tlou-timeline-content">
+                        <span class="tlou-timeline-year">~2033 — Boston</span>
+                        <h3>A Missão Começa</h3>
+                        <p>
+                            Vinte anos depois, vivendo como contrabandista na zona de quarentena, Joel aceita ao lado
+                            de Tess a tarefa de levar Ellie para fora da cidade. A revelação de que a garota é imune à
+                            infecção transforma um trabalho comum na missão mais importante — e perigosa — de suas vidas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tlou-timeline-item">
+                    <div class="tlou-timeline-marker"></div>
+                    <div class="tlou-timeline-content">
+                        <span class="tlou-timeline-year">A Travessia</span>
+                        <h3>Atravessando o País</h3>
+                        <p>
+                            De cidades destruídas a universidades abandonadas, de subúrbios silenciosos a montanhas
+                            cobertas de neve, Joel e Ellie enfrentam infectados, grupos hostis e a dureza das estações.
+                            A cada perigo superado, a relação entre os dois se aprofunda e se transforma em algo raro
+                            naquele mundo: confiança verdadeira.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tlou-timeline-item">
+                    <div class="tlou-timeline-marker"></div>
+                    <div class="tlou-timeline-content">
+                        <span class="tlou-timeline-year">O Hospital</span>
+                        <h3>A Escolha Impossível</h3>
+                        <p>
+                            Ao finalmente alcançar os Vaga-lumes, Joel descobre que produzir uma cura a partir da
+                            imunidade de Ellie custaria a vida da garota. Diante da possibilidade de perder mais uma
+                            filha, ele toma uma decisão radical e irreversível, que salva Ellie mas condena o futuro
+                            da humanidade a uma incerteza dolorosa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tlou-timeline-item">
+                    <div class="tlou-timeline-marker"></div>
+                    <div class="tlou-timeline-content">
+                        <span class="tlou-timeline-year">Anos Depois</span>
+                        <h3>As Consequências</h3>
+                        <p>
+                            A história prossegue explorando o peso daquela escolha: a mentira que sustenta a relação
+                            entre os dois, os ciclos de vingança que ela desencadeia e as difíceis perguntas sobre
+                            culpa, perdão e o verdadeiro significado de proteger alguém em um mundo onde nenhuma
+                            decisão vem sem consequências.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SÉRIE ===================== -->
+    <section id="serie" class="tlou-section">
+        <div class="container">
+            <div class="tlou-section-head">
+                <span class="tlou-eyebrow"><i class="bi bi-tv-fill me-1"></i> 05 — Adaptação</span>
+                <h2 class="tlou-section-title">A Série</h2>
+            </div>
+
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="tlou-serie-img">
+                        <span class="tlou-char-placeholder"><i class="bi bi-image"></i> Imagem — Pôster da Série</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="tlou-text">
+                        Lançada em janeiro de 2023 pela HBO, a série <strong>The Last of Us</strong> adapta o aclamado
+                        jogo da Naughty Dog e rapidamente se transformou em um fenômeno mundial, batendo recordes de
+                        audiência e conquistando tanto os fãs de longa data quanto um público inteiramente novo. A
+                        produção foi amplamente elogiada por transportar para a tela toda a carga emocional da obra
+                        original, sem abrir mão de sua identidade sombria, tensa e profundamente humana.
+                    </p>
+                    <p class="tlou-text">
+                        Protagonizada por Pedro Pascal como Joel e Bella Ramsey como Ellie, a série se destaca pela
+                        fidelidade emocional ao material de origem, pela ambientação meticulosa dos cenários devastados
+                        e por episódios que ousam expandir e aprofundar a narrativa. Momentos como a comovente história
+                        de Bill e Frank mostraram como a adaptação foi capaz de usar a liberdade do formato televisivo
+                        para acrescentar novas camadas a um universo já querido por milhões de pessoas ao redor do mundo.
+                    </p>
+
+                    <div class="row g-3 tlou-serie-stats">
+                        <div class="col-6 col-md-3">
+                            <div class="tlou-stat">
+                                <i class="bi bi-calendar-event"></i>
+                                <span class="tlou-stat-num">2023</span>
+                                <span class="tlou-stat-label">Estreia</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="tlou-stat">
+                                <i class="bi bi-broadcast-pin"></i>
+                                <span class="tlou-stat-num">HBO</span>
+                                <span class="tlou-stat-label">Emissora</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="tlou-stat">
+                                <i class="bi bi-film"></i>
+                                <span class="tlou-stat-num">Drama</span>
+                                <span class="tlou-stat-label">Gênero</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="tlou-stat">
+                                <i class="bi bi-star-fill"></i>
+                                <span class="tlou-stat-num">9.0</span>
+                                <span class="tlou-stat-label">Avaliação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CHAMADA FINAL ===================== -->
+    <section class="tlou-cta">
+        <div class="container text-center">
+            <h2 class="tlou-cta-title">Prepare-se para a jornada</h2>
+            <p class="tlou-cta-text">
+                Mergulhe em uma das narrativas mais aclamadas da história dos videogames e da televisão. Uma travessia
+                sobre esperança e sacrifício em um mundo que se recusa a desistir.
+            </p>
+            <a href="#inicio" class="btn tlou-btn-primary"><i class="bi bi-arrow-up-short me-1"></i> Voltar ao Início</a>
+        </div>
+    </section>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer class="tlou-footer">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="tlou-footer-brand"><i class="bi bi-shield-fill-check me-2"></i>THE LAST OF US</p>
+                    <p class="tlou-footer-text">
+                        Site informativo feito para fins de estudo. Todos os direitos da obra pertencem à
+                        Naughty Dog, Sony e HBO.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="tlou-footer-nav">
+                        <li><a href="#historia">História</a></li>
+                        <li><a href="#infectados">Infectados</a></li>
+                        <li><a href="#personagens">Personagens</a></li>
+                        <li><a href="#cronologia">Linha do Tempo</a></li>
+                        <li><a href="#serie">Série</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
