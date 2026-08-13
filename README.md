@@ -60,11 +60,11 @@ Estruturamos o repositório de forma limpa e padronizada para facilitar a navega
 
 ## 5. Organização e Navegação das Páginas
 
-### 5.1. Página Principal – `index.html` e `pag1.html`
+### 5.1. Página Principal – `index.html`
 
-A página principal e a página de apresentação introduzem o projeto, trazendo o contexto da disciplina e apresentando a equipe. O código contém um menu de navegação global que conecta diretamente todas as páginas do site, permitindo navegação fluida e bidirecional em qualquer seção.
+A página principal introduz o projeto, trazendo o contexto da disciplina e apresentando a equipe. O código contém um menu de navegação global que conecta diretamente todas as páginas do site, permitindo navegação fluida e bidirecional em qualquer seção.
 
-### 5.2. Páginas Temáticas – `pag2.html`, `pag3.html` e `pag4.html`
+### 5.2. Páginas Temáticas – `pag2.html`, `pag3.html`, `pag4.html` e `pag1.html`
 
 A existência de arquivos HTML separados para cada jogo facilita a organização do projeto e permite que cada integrante aplique livremente a paleta de cores e o estilo visual condizente com a sua proposta. Todas as páginas mantêm links de navegação acessíveis para permitir que o usuário vá para qualquer outra página a qualquer momento.
 
