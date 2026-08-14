@@ -301,7 +301,7 @@ section.alt { background: rgba(43,29,16,0.05); }
       rgba(15, 10, 5, 0.25),
       rgba(15, 10, 5, 0.55)
     ),
-    url('kaua.img/Banner_KDC_II.png');
+    url('../img/kaua.img/Banner_KDC_II.png');
 
   background-position: center center;
   background-size: cover;

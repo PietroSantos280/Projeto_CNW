@@ -117,7 +117,7 @@ a {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-image: url("../imgartur/capa.jpg");
+    background-image: url("../img/imgartur/capa.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -259,7 +259,7 @@ a {
 .jogos {
     background:
         linear-gradient(rgba(23, 28, 24, 0.97), rgba(23, 28, 24, 0.97)),
-        url("../imgartur/mundo.jpg") center / cover;
+        url("img/imgartur/mundo.jpg") center / cover;
 }
 
 .titulo-secao {
