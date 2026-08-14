@@ -523,3 +523,121 @@ a {
     padding: 0.55rem 1rem;
   }
 }
+/* =========================================================
+   MENU SANDUÍCHE (MOBILE)
+========================================================= */
+
+.nav-toggle-input {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  z-index: 70;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--primary);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Transforma em "X" quando aberto */
+.nav-toggle-input:checked ~ .nav-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle-input:checked ~ .nav-toggle span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle-input:checked ~ .nav-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .header-inner nav {
+    order: 3;
+    width: 100%;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.3s ease;
+  }
+
+  .nav-toggle-input:checked ~ nav .nav-list {
+    max-height: 28rem;
+    opacity: 1;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 0.85rem 0.25rem;
+    font-family: var(--font-serif);
+    letter-spacing: 0.08em;
+  }
+
+  .nav-list li:not(:last-child) {
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Dropdown vira submenu fixo empilhado, sem depender de hover */
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: oklch(0.17 0.02 155);
+    padding: 0;
+    display: none;
+  }
+
+  .nav-toggle-input:checked ~ nav .dropdown:focus-within .dropdown-menu,
+  .dropdown-toggle:focus ~ .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-toggle .caret {
+    margin-left: auto;
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    width: 100%;
+  }
+
+  .dropdown-menu a {
+    padding-left: 1.5rem;
+  }
+}

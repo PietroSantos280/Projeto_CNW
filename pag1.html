@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,12 @@
     <header class="topo">
         <nav class="navbar">
             <a href="#inicio" class="logo">THE LAST OF US</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
             <ul class="menu">
                 <li><a href="#inicio">Início</a></li>
@@ -20,6 +27,15 @@
                 <li><a href="#personagens">Personagens</a></li>
                 <li><a href="#infectados">Infectados</a></li>
                 <li><a href="#serie">Série</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Mundos <span class="caret">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pag2.html">Zelda</a></li>
+                        <li><a href="pag3.html">...</a></li>
+                        <li><a href="pag4.html">Ghost of Tsushima</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -94,7 +110,7 @@
                 </div>
 
                 <div class="imagem-destaque">
-                    <img src="imgartur/mundo.jpg" alt="Mundo pós-apocalíptico de The Last of Us">
+                    <img src="img/imgartur/mundo.jpg" alt="Mundo pós-apocalíptico de The Last of Us">
                 </div>
 
             </div>
@@ -115,7 +131,7 @@
                     <article class="jogo-card">
 
                         <div class="jogo-imagem">
-                            <img src="imgartur/part1.jpg" alt="The Last of Us Part I">
+                            <img src="img/imgartur/part1.jpg" alt="The Last of Us Part I">
                             <span>PART I</span>
                         </div>
 
@@ -173,7 +189,7 @@
                     <article class="jogo-card">
 
                         <div class="jogo-imagem">
-                            <img src="imgartur/part2.jpg" alt="The Last of Us Part II">
+                            <img src="img/imgartur/part2.jpg" alt="The Last of Us Part II">
                             <span>PART II</span>
                         </div>
 
@@ -243,7 +259,7 @@
                     <article class="personagem">
 
                         <div class="personagem-imagem">
-                            <img src="imgartur/joel.jpg" alt="Joel Miller">
+                            <img src="img/imgartur/joel.jpg" alt="Joel Miller">
                         </div>
 
                         <div class="personagem-conteudo">
@@ -276,7 +292,7 @@
                     <article class="personagem">
 
                         <div class="personagem-imagem">
-                            <img src="imgartur/ellie.jpg" alt="Ellie Williams">
+                            <img src="img/imgartur/ellie.jpg" alt="Ellie Williams">
                         </div>
 
                         <div class="personagem-conteudo">
@@ -315,7 +331,7 @@
                     <article class="personagem">
 
                         <div class="personagem-imagem">
-                            <img src="imgartur/abby.jpg" alt="Abby Anderson">
+                            <img src="img/imgartur/abby.jpg" alt="Abby Anderson">
                         </div>
 
                         <div class="personagem-conteudo">
@@ -352,7 +368,7 @@
                     <article class="personagem">
 
                         <div class="personagem-imagem">
-                            <img src="imgartur/tommy.jpg" alt="Tommy Miller">
+                            <img src="img/imgartur/tommy.jpg" alt="Tommy Miller">
                         </div>
 
                         <div class="personagem-conteudo">
@@ -408,7 +424,7 @@
                     <article class="infectado">
 
                         <div class="infectado-imagem">
-                            <img src="imgartur/corredor.jpg" alt="Corredor">
+                            <img src="img/imgartur/corredor.jpg" alt="Corredor">
                         </div>
 
                         <div>
@@ -435,7 +451,7 @@
                     <article class="infectado">
 
                         <div class="infectado-imagem">
-                            <img src="imgartur/perseguidor.jpg" alt="Perseguidor">
+                            <img src="img/imgartur/perseguidor.jpg" alt="Perseguidor">
                         </div>
 
                         <div>
@@ -461,7 +477,7 @@
                     <article class="infectado">
 
                         <div class="infectado-imagem">
-                            <img src="imgartur/estalador.jpg" alt="Estalador">
+                            <img src="img/imgartur/estalador.jpg" alt="Estalador">
                         </div>
 
                         <div>
@@ -489,7 +505,7 @@
                     <article class="infectado">
 
                         <div class="infectado-imagem">
-                            <img src="imgartur/baiacu.jpg" alt="Baiacu">
+                            <img src="img/imgartur/baiacu.jpg" alt="Baiacu">
                         </div>
 
                         <div>
@@ -525,7 +541,7 @@
             <div class="container serie-grid">
 
                 <div class="serie-imagem">
-                    <img src="imgartur/serie.jpg" alt="Série The Last of Us">
+                    <img src="img/imgartur/serie.jpg" alt="Série The Last of Us">
                 </div>
 
                 <div class="serie-conteudo">
@@ -610,4 +626,5 @@
     </footer>
 
 </body>
+
 </html>
