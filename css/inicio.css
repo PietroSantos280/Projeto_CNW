@@ -484,3 +484,26 @@ footer {
         transition: none;
     }
 }
+/* ---------- Nova cor: Kingdom Come (bronze/âmbar) ---------- */
+:root {
+    --amber: #cf9a4e;
+    --amber-bright: #e6bd7a;
+}
+
+.band.kingdom {
+    background: radial-gradient(120% 100% at 65% 0%, #4a3520 0%, var(--void-deep) 72%);
+}
+
+.world-tag.kingdom {
+    border-color: rgba(207, 154, 78, 0.45);
+    color: var(--amber-bright);
+}
+
+.slot.w-kingdom {
+    border-color: rgba(207, 154, 78, 0.35);
+}
+
+.slot.w-kingdom:hover {
+    border-color: var(--amber-bright);
+    background: linear-gradient(180deg, rgba(207, 154, 78, 0.14), rgba(237, 230, 214, 0));
+}

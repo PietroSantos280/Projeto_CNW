@@ -525,6 +525,7 @@ footer.site .brand-f {
 }
 
 .dropdown-menu {
+  display: block;   /* ADICIONE ESTA LINHA — sobrescreve o "nav ul { display:flex }" */
   position: absolute;
   top: calc(100% + 16px);
   right: 0;
@@ -575,7 +576,9 @@ footer.site .brand-f {
   background: rgba(168, 128, 44, 0.12);
   padding-left: 26px;
 }
-
+.dropdown-menu li {
+  width: 100%;
+}
 
 /* =========================================================
    MENU SANDUÍCHE (MOBILE)
