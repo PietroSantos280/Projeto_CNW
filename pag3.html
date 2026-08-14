@@ -9,18 +9,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="kaua.img/icon_kdc_3.png">
-  <link rel="stylesheet" href="kaua.css" />
+  <link rel="icon" type="image/png" href="img/kaua.img/icon_kdc_3.png">
+  <link rel="stylesheet" href="css/kaua.css" />
 </head>
 <body>
   <header class="site">
     <div class="nav">
       <div class="brand">
       <span class="crest">
-      <img src="kaua.img/icon_kdc_3.png" alt="Kingdom Come">
+      <img src="img/kaua.img/icon_kdc_3.png" alt="Kingdom Come">
       </span>
         <span>Kingdom Come</span>
       </div>
+       <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
       <nav aria-label="Navegação principal">
         <ul>
           <li><a href="#historia">História</a></li>
@@ -28,8 +34,17 @@
           <li><a href="#personagens">Personagens</a></li>
           <li><a href="#recursos">Jogabilidade</a></li>
           <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#timeline">Cronologia</a></li>
           <li><a href="#mundo">O Mundo</a></li>
+
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Mundos <span class="caret">▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pag2.html">Zelda</a></li>
+            <li><a href="pag3.html">The Last of Us</a></li>
+            <li><a href="pag4.html">Ghost of Tsushima</a></li>
+          </ul>
+        </li>
         </ul>
       </nav>
     </div>
@@ -88,7 +103,7 @@
     </div>
 
     <div class="hero-image">
-      <img src="kaua.img/Henry_KCD_II_.png" alt="Henry de Skalitz">
+      <img src="img/kaua.img/Henry_KCD_II_.png" alt="Henry de Skalitz">
     </div>
 
   </div>
@@ -122,7 +137,7 @@
         </div>
         <div class="games">
           <article class="game-card">
-            <img src="kaua.img/kdc1.jpg" alt="" />
+            <img src="img/kaua.img/kdc1.jpg" alt="" />
             <div class="body">
               <span class="year">2018 &middot; Warhorse Studios</span>
               <h3>Kingdom Come: Deliverance</h3>
@@ -134,7 +149,7 @@
             </div>
           </article>
           <article class="game-card">
-            <img src="kaua.img/kdc2.jpg" alt="" />
+            <img src="img/kaua.img/kdc2.jpg" alt="" />
             <div class="body">
               <span class="year">2025 &middot; Warhorse Studios</span>
               <h3>Kingdom Come: Deliverance II</h3>
@@ -159,7 +174,7 @@
         </div>
         <div class="chars">
           <article class="char-card">
-            <img src="kaua.img/henry_codex.jpeg" alt="Retrato de Henry, jovem filho de ferreiro" />
+            <img src="img/kaua.img/henry_codex.jpeg" alt="Retrato de Henry, jovem filho de ferreiro" />
             <div class="char-body">
               <h3>Henry de Skalitz</h3>
               <span class="char-role">Protagonista</span>
@@ -167,7 +182,7 @@
             </div>
           </article>
           <article class="char-card">
-            <img src="kaua.img/hans_capon_codex.webp" alt="Retrato de Sir Hans Capon, jovem nobre" />
+            <img src="img/kaua.img/hans_capon_codex.webp" alt="Retrato de Sir Hans Capon, jovem nobre" />
             <div class="char-body">
               <h3>Sir Hans Capon</h3>
               <span class="char-role">Nobre &middot; Aliado</span>
@@ -175,7 +190,7 @@
             </div>
           </article>
           <article class="char-card">
-            <img src="kaua.img/sir_radzig_codex.webp" alt="Retrato de Sir Radzig Kobyla, cavaleiro veterano" />
+            <img src="img/kaua.img/sir_radzig_codex.webp" alt="Retrato de Sir Radzig Kobyla, cavaleiro veterano" />
             <div class="char-body">
               <h3>Sir Radzig Kobyla</h3>
               <span class="char-role">Cavaleiro &middot; Mentor</span>
@@ -184,7 +199,7 @@
           </article>
           <!-- ESPAÇO PARA VOCÊ: copie um bloco .char-card acima e edite -->
           <article class="char-card">
-            <img src="kaua.img/hanush_codex.webp" alt="Retrato de Sir Hanush, nobre e senhor de leipa" />
+            <img src="img/kaua.img/hanush_codex.webp" alt="Retrato de Sir Hanush, nobre e senhor de leipa" />
             <div class="char-body">
               <h3>Sir Hanush de Leipa</h3>
               <span class="char-role">NOBRE · ALIADO</span>
@@ -241,9 +256,9 @@
           <div class="rule" aria-hidden="true"></div>
         </div>
         <div class="gallery">
-          <figure class="shot"><img src="kaua.img/galeria1.avif" alt="Paisagem da Boêmia rural com castelo" /></figure>
-          <figure class="shot"><img src="kaua.img/galeria2.avif" alt="Cidade de Kuttenberg ao pôr do sol" /></figure>
-          <figure class="shot"><img src="kaua.img/galeria3.avif" alt="Cena de batalha medieval na névoa" /></figure>
+          <figure class="shot"><img src="img/kaua.img/galeria1.avif" alt="Paisagem da Boêmia rural com castelo" /></figure>
+          <figure class="shot"><img src="img/kaua.img/galeria2.avif" alt="Cidade de Kuttenberg ao pôr do sol" /></figure>
+          <figure class="shot"><img src="img/kaua.img/galeria3.avif" alt="Cena de batalha medieval na névoa" /></figure>
         </div>
       </div>
     </section>
