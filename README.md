@@ -48,8 +48,8 @@ Estruturamos o repositório de forma limpa e padronizada para facilitar a navega
 
 * index.html — Página Principal, Apresentação dos Integrantes e Ponto de Entrada do Site
 * pag1.html — Página temática: *The Last of Us*
-* pag2.html — Página temática: **
-* pag3.html — Página temática: *The Legend of Zelda*
+* pag2.html — Página temática: *The Legend of Zelda*
+* pag3.html — Página temática: *Kingdom Come*
 * pag4.html — Página temática: *Ghost of Tsushima*
 * README.md — Documentação Técnica do Repositório
 * img/ — Pastas contendo imagens e arquivos de estilo CSS
